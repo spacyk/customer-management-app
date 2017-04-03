@@ -1,0 +1,2 @@
+# customerRestApp
+Django REST + AngularJS
