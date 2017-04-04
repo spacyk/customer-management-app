@@ -1,17 +1,17 @@
-var conf = angular.module('userapp', ['ngRoute', 'ngResource']);
+var app = angular.module('customerapp', ['ngResource']);
 
-conf.config(function($interpolateProvider) {
+app.config(function($interpolateProvider) {
   $interpolateProvider.startSymbol('{[{');
   $interpolateProvider.endSymbol('}]}');
 });
 
-conf.config(['$httpProvider', function($httpProvider) {
+app.config(['$httpProvider', function($httpProvider) {
     $httpProvider.defaults.xsrfCookieName = 'csrftoken';
     $httpProvider.defaults.xsrfHeaderName = 'X-CSRFToken';
 }]);
 
 
-conf.factory('Customer', function($resource) {
+app.factory('Customer', function($resource) {
     return $resource('/customer/:id', {
       id: '@id'
     },{
@@ -22,7 +22,7 @@ conf.factory('Customer', function($resource) {
   });
 
 
-conf.controller('change', function($scope, $location, Customer) {
+app.controller('change', function($scope, Customer) {
 
     $scope.customs = Customer.query();
 

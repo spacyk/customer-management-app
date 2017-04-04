@@ -24,7 +24,7 @@ def about(request):
 
 
 
-# Function view for customer create
+# Additional function view for customer create
 class CustomerForm(ModelForm):
     class Meta:
         model = Customer
@@ -41,7 +41,7 @@ def customer_create(request, template_name='users/create_form.html'):
 # REST classbased views
 class CustomerList(APIView):
     """
-    List all customers, or add new customer.
+    List all customers.
     """
     permission_classes = (AllowAny,)
     def get(self, request, format=None):
@@ -55,7 +55,7 @@ class CustomerDetail(APIView):
     template_name = 'users/customer_form.html'
 
     """
-    Retrieve, update or delete a snippet instance.
+    Retrieve, update or delete customer instance.
     """
     permission_classes = (AllowAny,)
     def get_object(self, pk):
