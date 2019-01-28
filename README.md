@@ -1,7 +1,7 @@
 # customerManagementApp
 
 ### Description
-##### Simple web application, example of angularJS with external Django REST API
+##### Example of angularJS with Django REST API
 Application allows you to add new customers to the database, update their personal information, delete customer, view all the customers in a list or view details of the specific customer.
 
 ### Quickstart
@@ -17,7 +17,7 @@ python manage.py runserver
 
 ### Preview
 
-#### Customers Page - View, Edit, Remove
+#### Customers Page - Detail, Edit, Delete
 ![Screenshot](images/customers.png)
 #### Add Customer
 ![Screenshot](images/add.png)
