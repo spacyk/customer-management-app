@@ -2,6 +2,7 @@
 
 ### Description
 ##### Simple web application, example of angularJS with external Django REST API
+Application allows you to add new customers to the database, update their personal information, delete customer, view all the customers in a list or view details of the specific customer.
 
 ### Quickstart
 ```
