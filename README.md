@@ -1,5 +1,7 @@
 # Customer Management App
 
+*Very old and not maintained.
+
 ### Description
 ##### Example of angularJS with Django REST API
 Application allows you to add new customers to the database, update their personal information, delete customer, view all the customers in a list or view details of the specific customer.
