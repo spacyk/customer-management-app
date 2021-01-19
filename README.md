@@ -1,4 +1,4 @@
-# customerManagementApp
+# Customer Management App
 
 ### Description
 ##### Example of angularJS with Django REST API
